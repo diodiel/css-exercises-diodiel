@@ -4,18 +4,24 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-weight: bold;
+  align-content: center;
+  padding-left: 10px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-content: center;
+  text-align: center;
 }
 
 .sidebar {
@@ -29,19 +35,26 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  max-width: 200px;
+  max-width: 300px;
+  flex-shrink: 0;
+  padding: 20px;
+  
+  
 }
 
 li {
-  list-style:none
+  list-style:none;
 }  
 
 a {
   text-decoration: none;
+  color: white;
+
 }
 
 .middle-items {
   display: flex;
+  flex: 1;
 }
 
 .card-container {
@@ -49,5 +62,14 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
-  justify-content: space-evenly;
+  padding: 40px;
+  flex: 1;
+
+}
+
+ul {
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
